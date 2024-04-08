@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+/* Main Header CSS */
+.header{
+    height: 12vh;
+    background-color: rgb(84, 84, 247);
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+/* .avatar{
+    width: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: white;
+} */
+.logo-img{
+    width: 180px;
+    height: 60px;
+    overflow: hidden;
+}
+.avatar .logo-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.menu-header{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+.menu-header a, .menu-header p{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid white;
+    margin: 0px;
+}
+.menu-header a:hover,  .menu-header p:hover{
+    /* text-decoration: none;
+    color: white; */
+    border-bottom: 2px solid brown;
+    padding: 5px;
+    background-color: brown;
+}
+.menu-header p{
+    color: white;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+}
+/* Banner section CSS */
+.banner-section{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+}
+.banner-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: 0%;
+}
+.banner-section h1{
+    position: absolute;
+    font-size: 20px;
+    bottom: 20px;
+    padding: 20px;
+    right: 20px;
+    background-color: brown;
+    color: white;
+    /* padding-block: 20px; */
+}
+.mobile{
+    display: none !important;
+}
+.main-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+/* About me css section */
+.main-area {
+    width: 70%;
+    font-size: 20px; /* Adjust the text size as desired */
+    font-family: Arial, Helvetica, sans-serif; /* Specify multiple font options */
+}
+.minor-area{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutme-section, .work-section, .contact-section{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.vertical-divider{
+    width: 15px;
+    height: 250px;
+    background-color: brown;
+}
+.horizontal-bar{
+    display: none !important;
+}
+/* WORK CSS */
+.work-images{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+    position: relative;
+    row-gap: 20px;
+}
+.work-images div img{
+    width: 100%;
+    height: auto;
+    border: 3px solid brown;
+    z-index: 999;
+ 
+}
+.work-images div img:hover{
+    scale: 1.02;
+    transition: ease-in;
+ 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ef5328;
+    z-index: 9999999;
+  }
+.overlay:hover {
+    opacity: 0.3;
+    /* background-color: #008CBA; */
+  }
+
+  
+ 
+.work-images-2{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    /* position: relative; */
+}
+.work-img{
+    position: relative;
+    z-index: 9999;
+}
+/* .work-img:hover{
+background-color: rgb(255, 18, 5);
+z-index: 999999;
+opacity: 0.9;
+} */
+.vertical-divider-work{
+    width: 15px;
+    height: 720px;
+    background-color: brown;
+}
+.tag{
+    position: absolute;
+    bottom: 30px;
+    width: 120px;
+    height: 50px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    
+}
+.tag2{
+    position: absolute;
+    bottom: 30px;
+    width: 120px;
+    height: 50px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.tag a, .tag2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.tag p, .tag2 p{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0px;
+
+}
+/* Conatct css section */
+.links{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+.links p{
+    text-decoration: underline;
+    color: brown;
+}
+/* .horizontal-line{
+    display: block !important;
+    width:  200px !important;
+    height: 5px !important;
+    background-color: brown !important;
+} */
+
+
+@media screen and (max-width: 1350px) {
+    .mobile{
+        display: block !important;
+    }
+    .main{
+        display: none !important;
+    }
+    .tag, .tag2{
+       
+        top: 15px !important;
+        width: 90px !important;
+        height: 30px !important;
+       
+ 
+    }
+    .tag{
+        top: 30px !important;
+    }
+    .tag a, .tag2 a{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .banner-section{
+        height: 30vh !important;
+        object-fit: contain !important;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .horizontal-bar{
+        display: block !important;
+        width:  80px !important;
+        height: 15px !important;
+        background-color: brown !important;
+    }
+    .vertical-divider-work .vertical-divider{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .minor-area{
+        width: 200px;
+        display: flex ;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .work-images-2{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: flex-start;
+        column-gap: 20px !important;
+        row-gap: 20px !important;
+        /* position: relative; */
+    }
+    .main{
+        display: none !important;
+    }
+    .vertical-divider, .vertical-divider-work{
+        display: none !important;
+    }
+    .banner-section{
+        height: 30vh !important;
+        object-fit: contain !important;
+    }
+    .banner-section h1{
+      
+        bottom: 20px !important;
+ 
+        right: 30% !important;
+    
+        /* padding-block: 20px; */
+    }
+    .aboutme-section, .work-section, .contact-section{
+       
+        display: flex;
+        flex-direction: column !important;
+     
+    }
+    .minor-area{
+        width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+    }
+    .links{
+       
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        /* justify-content: space-between; */
+    }
+    .tag, .tag2{
+       
+        top: 15px !important;
+        width: 80px !important;
+        height: 30px !important;
+       
+ 
+    }
+    .tag{
+        top: 40px !important;
+    }
+    .tag a, .tag2 a{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .header img{
+        width: 80px !important;
+        height: 30px !important;
+    }
+    .menu-header p{
+        display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .mobile{
+        display: block !important;
+    }
+    .main{
+        display: none !important;
+    }
+    .tag, .tag2{
+       
+        top: 5px !important;
+        width: 70px !important;
+        height: 20px !important;
+       
+ 
+    }
+    .tag{
+        top: 20px !important;
+    }
+    .tag a, .tag2 a{
+        font-size: 10px !important;
+        width: 100% !important;
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    .banner-section{
+        height: 25vh !important;
+        object-fit: contain !important;
+      
+    }
+
+  }
