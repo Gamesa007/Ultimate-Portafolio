@@ -37,11 +37,8 @@ Contact:
 This is last part of the work abd contains links.
 
 
-Image link:
------------
-
 Project link:
 --------------
-
+https://gamesa007.github.io/Ultimate-Portafolio/
 
 
